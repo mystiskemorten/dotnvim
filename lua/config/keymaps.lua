@@ -31,9 +31,6 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 -- chmod
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
--- zenmode
-vim.api.nvim_set_keymap("n", "<leader>z", ":ZenMode<cr>", { silent = true, noremap = true, desc = "[Z]enMode" })
-
 -- fugitive
 vim.keymap.set("n", "<leader>gd", vim.cmd.Git)
 
