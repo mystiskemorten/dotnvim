@@ -2,10 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Move current line up/down
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-
 -- Trim space
 vim.keymap.set("n", "J", "mzJ`z")
 
@@ -13,11 +9,12 @@ vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "10jzz")
 vim.keymap.set("n", "<C-u>", "10kzz")
 
--- Yank from position to end of line
-vim.keymap.set("n", "Y", "yg$")
-
+-- Next and prev search result
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+-- Yank from position to end of line
+vim.keymap.set("n", "Y", "yg$")
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
