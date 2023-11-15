@@ -50,3 +50,9 @@ vim.api.nvim_set_keymap(
   ":DiffviewFileHistory<cr>",
   { silent = true, noremap = true, desc = "[G]it diffview file [h]istory" }
 )
+
+-- Replace text
+vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left><Left>]], { desc = "Replace word" })
+vim.keymap.set("v", "<leader>rc", [["hy:%s/<C-r>h//gc<Left><Left><Left>]], { desc = "Replace text and confirm" })
+vim.keymap.set("v", "<leader>ri", [["hy:%s/<C-r>h//gI<Left><Left><Left>]], { desc = "Replace text not confirm" })
+vim.keymap.set("n", "<leader>rq", [[:cdo s/foo/bar/gI]], { desc = "Replace text in quicklist" })
