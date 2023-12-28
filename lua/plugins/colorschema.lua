@@ -2,8 +2,10 @@ return {
   -- add gruvbox
   {
     "ellisonleao/gruvbox.nvim",
+    lazy = true,
     opts = {
       contrast = "soft",
+      transparent_mode = true,
     },
   },
 

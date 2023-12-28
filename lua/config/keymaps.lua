@@ -60,3 +60,17 @@ vim.keymap.set("n", "<leader>rq", [[:cdo s/foo/bar/gI]], { desc = "Replace text 
 -- change keymaps due to norwegian keyboard layout
 vim.keymap.set("n", "<leader>|", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 vim.keymap.set("n", "<leader>\\", "<C-W>v", { desc = "Split window right", remap = true })
+
+-- Function to toggle background
+local toggle_background = function()
+  local current_bg = vim.fn.eval("&background")
+  print("Current background:", current_bg)
+  if current_bg == "light" then
+    vim.cmd("set bg=dark")
+  else
+    vim.cmd("set bg=light")
+  end
+end
+
+-- Key mapping to call the function
+vim.keymap.set("n", "<leader>ub", toggle_background, { noremap = true, silent = true })
