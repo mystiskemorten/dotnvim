@@ -74,6 +74,3 @@ end
 
 -- Key mapping to call the function
 vim.keymap.set("n", "<leader>ub", toggle_background, { noremap = true, silent = true })
-
--- toggle checked / create checkbox if it doesn't exist
-vim.keymap.set("n", "<leader>n", require("markdown-togglecheck").toggle, { desc = "Toggle Checkmark" })
