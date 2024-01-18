@@ -66,8 +66,10 @@ local toggle_background = function()
   local current_bg = vim.fn.eval("&background")
   print("Current background:", current_bg)
   if current_bg == "light" then
+    vim.g.gruvbox_material_transparent_background = 1
     vim.cmd("set bg=dark")
   else
+    vim.g.gruvbox_material_transparent_background = 0
     vim.cmd("set bg=light")
   end
 end
