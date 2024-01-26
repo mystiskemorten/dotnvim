@@ -5,7 +5,12 @@
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown" },
   callback = function()
+    if vim.fn.expand("%:t") == "NOTES.md" then
+      vim.diagnostic.disable()
+      vim.opt_local.spell = false
+    else
+      vim.opt_local.spelllang = "nb,en"
+    end
     vim.opt_local.foldlevel = 1
-    vim.opt_local.spelllang = "nb,en"
   end,
 })
