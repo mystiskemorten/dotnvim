@@ -6,8 +6,8 @@
 vim.keymap.set("n", "J", "mzJ`z")
 
 -- Jump p/down in file by 10 lines
-vim.keymap.set("n", "<C-d>", "10jzz")
-vim.keymap.set("n", "<C-u>", "10kzz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Next and prev search result
 vim.keymap.set("n", "n", "nzzzv")
