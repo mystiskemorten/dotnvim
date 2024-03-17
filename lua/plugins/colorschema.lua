@@ -15,6 +15,15 @@ return {
       vim.g.gruvbox_material_transparent_background = 1
     end,
   },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      styles = {
+        transparency = true,
+      },
+    },
+  },
 
   -- Configure LazyVim to load gruvbox
   {
