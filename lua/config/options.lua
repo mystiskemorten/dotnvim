@@ -5,3 +5,4 @@
 vim.o.background = "dark"
 vim.g.markdown_folding = 1
 vim.opt.colorcolumn = "80"
+vim.opt.cmdheight = 0

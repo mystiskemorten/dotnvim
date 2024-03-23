@@ -26,7 +26,7 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- chmod
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>fx", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- fugitive
 vim.keymap.set("n", "<leader>gd", vim.cmd.Git)
