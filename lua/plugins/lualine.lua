@@ -7,12 +7,20 @@ custom_gruvbox.normal.b.bg = nil
 custom_gruvbox.normal.c.bg = nil
 custom_gruvbox.command.a.fg = custom_gruvbox.command.a.bg
 custom_gruvbox.command.a.bg = nil
+custom_gruvbox.command.b.bg = nil
+custom_gruvbox.command.c.bg = nil
 custom_gruvbox.insert.a.fg = custom_gruvbox.insert.a.bg
 custom_gruvbox.insert.a.bg = nil
+custom_gruvbox.insert.b.bg = nil
+custom_gruvbox.insert.c.bg = nil
 custom_gruvbox.replace.a.fg = custom_gruvbox.replace.a.bg
 custom_gruvbox.replace.a.bg = nil
+custom_gruvbox.replace.b.bg = nil
+custom_gruvbox.replace.c.bg = nil
 custom_gruvbox.visual.a.fg = custom_gruvbox.visual.a.bg
 custom_gruvbox.visual.a.bg = nil
+custom_gruvbox.visual.b.bg = nil
+custom_gruvbox.visual.c.bg = nil
 
 return {
   {
