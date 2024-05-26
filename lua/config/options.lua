@@ -3,6 +3,5 @@
 -- Add any additional options here
 
 vim.o.background = "light"
-vim.g.markdown_folding = 1
 vim.opt.colorcolumn = "80"
 vim.opt.cmdheight = 0
