@@ -38,17 +38,26 @@ vim.api.nvim_set_keymap(
   ":DiffviewOpen<cr>",
   { silent = true, noremap = true, desc = "[G]it diffview [o]pen" }
 )
+
 vim.api.nvim_set_keymap(
   "n",
   "<leader>gq",
   ":DiffviewClose<cr>",
   { silent = true, noremap = true, desc = "[G]it diffview [q]uit" }
 )
+
 vim.api.nvim_set_keymap(
   "n",
   "<leader>gl",
   ":DiffviewFileHistory<cr>",
-  { silent = true, noremap = true, desc = "[G]it diffview file [h]istory" }
+  { silent = true, noremap = true, desc = "[G]it [h]istory" }
+)
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>gL",
+  ":DiffviewFileHistory %<cr>",
+  { silent = true, noremap = true, desc = "Git [h]istory current buffer" }
 )
 
 -- Replace text
