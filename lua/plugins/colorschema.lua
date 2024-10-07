@@ -4,7 +4,7 @@ return {
     "ellisonleao/gruvbox.nvim",
     lazy = true,
     opts = {
-      contrast = "soft",
+      contrast = "hard",
       transparent_mode = true,
     },
   },
@@ -30,7 +30,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-material",
+      colorscheme = "gruvbox",
     },
   },
 
