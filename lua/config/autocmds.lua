@@ -12,5 +12,16 @@ vim.api.nvim_create_autocmd("FileType", {
       vim.opt_local.spelllang = "nb,en"
     end
     vim.opt_local.foldlevel = 1
+    vim.opt.colorcolumn = ""
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "/dev/shm/gopass*",
+  callback = function()
+    vim.opt_local.swapfile = false
+    vim.opt_local.backup = false
+    vim.opt_local.undofile = false
+    vim.opt_local.shada = ""
   end,
 })
