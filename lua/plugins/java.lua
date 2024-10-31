@@ -7,7 +7,7 @@ return {
           runtimes = {
             {
               name = "JavaSE-17",
-              path = vim.env.HOME .. "/.sdkman/candidates/java/17.0.11-jbr/",
+              path = vim.env.HOME .. "/.local/share/mise/installs/java/17.0.2/",
             },
           },
         },
