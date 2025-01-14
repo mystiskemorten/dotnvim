@@ -85,3 +85,22 @@ end
 
 -- Key mapping to call the function
 vim.keymap.set("n", "<leader>ub", toggle_background, { noremap = true, silent = true })
+
+local copy_reference = function()
+  -- Get current buffer's filename relative to the project root
+  local filepath = vim.fn.fnamemodify(vim.fn.expand("%"), ":~:.")
+  -- Get the current line number
+  local lineno = vim.api.nvim_win_get_cursor(0)[1]
+
+  -- Construct the reference string
+  local reference = filepath .. ":" .. lineno
+
+  -- Copy the reference to the clipboard
+  vim.fn.setreg("+", reference)
+
+  -- Optionally, print the reference
+  print(reference)
+end
+
+-- Map the function to a key combination
+vim.keymap.set("n", "<leader>fy", copy_reference, { noremap = true, silent = true })
