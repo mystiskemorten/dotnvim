@@ -104,3 +104,5 @@ end
 
 -- Map the function to a key combination
 vim.keymap.set("n", "<leader>fy", copy_reference, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>-", LazyVim.pick("live_grep"), { desc = "Grep (Root Dir)" })
