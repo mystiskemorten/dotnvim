@@ -6,6 +6,12 @@ return {
         bicep = {
           filetypes = { "bicep" },
         },
+        graphql = {
+          filetypes = { "graphql", "graphqls" },
+        },
+        fish_lsp = {
+          filetypes = { "fish" },
+        },
       },
     },
   },
