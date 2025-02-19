@@ -1,11 +1,16 @@
 return {
-  {
-    "stevearc/oil.nvim",
-    opts = {
-      -- Open parent directory in current window
-      vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),
-    },
-    -- Optional dependencies
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+  "stevearc/oil.nvim",
+  keys = {
+    { "-", "<cmd>Oil --float<CR>", desc = "Explorer" },
   },
+  opts = {
+    view_options = {
+      show_hidden = true,
+    },
+    float = {
+      padding = 5,
+    },
+  },
+  -- Optional dependencies
+  dependencies = { "nvim-tree/nvim-web-devicons" },
 }
