@@ -5,3 +5,14 @@
 vim.o.background = "light"
 vim.opt.colorcolumn = "80"
 vim.opt.cmdheight = 0
+
+vim.opt.diffopt = {
+  "internal",
+  "filler",
+  "closeoff",
+  "context:12",
+  "algorithm:histogram",
+  "linematch:200",
+  "indent-heuristic",
+  "iwhite", -- I toggle this one, it doesn't fit all cases.
+}

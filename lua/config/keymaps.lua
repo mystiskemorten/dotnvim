@@ -6,8 +6,8 @@
 vim.keymap.set("n", "J", "mzJ`z")
 
 -- Jump p/down in file by 10 lines
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+-- vim.keymap.set("n", "<C-d>", "<C-d>zz")
+-- vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Next and prev search result
 vim.keymap.set("n", "n", "nzzzv")
@@ -30,35 +30,6 @@ vim.keymap.set("n", "<leader>fx", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- fugitive
 vim.keymap.set("n", "<leader>gd", vim.cmd.Git)
-
--- diffview
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>gv",
-  ":DiffviewOpen<cr>",
-  { silent = true, noremap = true, desc = "[G]it diffview [o]pen" }
-)
-
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>gq",
-  ":DiffviewClose<cr>",
-  { silent = true, noremap = true, desc = "[G]it diffview [q]uit" }
-)
-
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>gl",
-  ":DiffviewFileHistory<cr>",
-  { silent = true, noremap = true, desc = "[G]it [h]istory" }
-)
-
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>gL",
-  ":DiffviewFileHistory %<cr>",
-  { silent = true, noremap = true, desc = "Git [h]istory current buffer" }
-)
 
 -- Replace text
 vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left><Left>]], { desc = "Replace word" })
