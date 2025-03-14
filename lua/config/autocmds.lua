@@ -25,3 +25,12 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
     vim.opt_local.shada = ""
   end,
 })
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.?*",
+  callback = function()
+    Snacks.zen.zen({
+      toggles = { dim = false, git_signs = true },
+    })
+  end,
+})
