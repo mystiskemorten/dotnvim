@@ -16,3 +16,5 @@ vim.opt.diffopt = {
   "indent-heuristic",
   "iwhite", -- I toggle this one, it doesn't fit all cases.
 }
+
+vim.g.snacks_animate = false

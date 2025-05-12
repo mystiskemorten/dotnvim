@@ -26,11 +26,11 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   end,
 })
 
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.?*",
-  callback = function()
-    Snacks.zen.zen({
-      toggles = { dim = false, git_signs = true },
-    })
-  end,
-})
+-- vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+--   pattern = "*.?*",
+--   callback = function()
+--     Snacks.zen.zen({
+--       toggles = { dim = false, git_signs = true },
+--     })
+--   end,
+-- })
