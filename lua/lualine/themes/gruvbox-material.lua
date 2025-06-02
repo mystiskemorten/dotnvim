@@ -86,4 +86,25 @@ theme = {
   },
 }
 
+theme.normal.a.fg = theme.normal.a.bg
+theme.normal.a.bg = nil
+theme.normal.b.bg = nil
+theme.normal.c.bg = nil
+theme.command.a.fg = theme.command.a.bg
+theme.command.a.bg = nil
+theme.command.b.bg = nil
+theme.command.c.bg = nil
+theme.insert.a.fg = theme.insert.a.bg
+theme.insert.a.bg = nil
+theme.insert.b.bg = nil
+theme.insert.c.bg = nil
+theme.replace.a.fg = theme.replace.a.bg
+theme.replace.a.bg = nil
+theme.replace.b.bg = nil
+theme.replace.c.bg = nil
+theme.visual.a.fg = theme.visual.a.bg
+theme.visual.a.bg = nil
+theme.visual.b.bg = nil
+theme.visual.c.bg = nil
+
 return theme
