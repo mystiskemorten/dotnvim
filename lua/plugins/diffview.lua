@@ -9,6 +9,7 @@ end
 return {
   {
     "sindrets/diffview.nvim",
+    lazy = false,
     requires = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
     keys = {
       {
