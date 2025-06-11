@@ -11,6 +11,9 @@ return {
     float = {
       padding = 5,
     },
+    keymaps = {
+      ["<leader>e"] = { "actions.close", mode = "n" },
+    },
   },
   -- Optional dependencies
   dependencies = { "nvim-tree/nvim-web-devicons" },
