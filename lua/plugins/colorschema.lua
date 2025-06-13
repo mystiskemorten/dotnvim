@@ -5,14 +5,14 @@ return {
     lazy = true,
     opts = {
       contrast = "hard",
-      transparent_mode = true,
+      transparent_mode = false,
     },
   },
   {
     "sainnhe/gruvbox-material",
     lazy = false,
     opts = function(_, _)
-      vim.g.gruvbox_material_transparent_background = 1
+      vim.g.gruvbox_material_transparent_background = 0
       vim.g.gruvbox_material_enable_italic = true
       vim.g.gruvbox_material_background = "hard"
     end,
@@ -27,11 +27,20 @@ return {
     },
   },
 
+  {
+    "webhooked/kanso.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = false,
+    },
+  },
+
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "rose-pine",
     },
   },
 
