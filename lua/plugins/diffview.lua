@@ -13,28 +13,28 @@ return {
     requires = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
     keys = {
       {
-        "<leader>gv",
+        "<leader>go",
         function()
           toggle_diffview("DiffviewOpen")
         end,
         desc = "Diff Index",
       },
       {
-        "<leader>gV",
+        "<leader>gO",
         function()
           toggle_diffview("DiffviewOpen master..HEAD")
         end,
         desc = "Diff master",
       },
       {
-        "<leader>gl",
+        "<leader>gf",
         function()
           toggle_diffview("DiffviewFileHistory")
         end,
         desc = "Open diffs for project",
       },
       {
-        "<leader>gL",
+        "<leader>gF",
         function()
           toggle_diffview("DiffviewFileHistory %")
         end,
