@@ -13,6 +13,8 @@ return {
     },
     keymaps = {
       ["<leader>e"] = { "actions.close", mode = "n" },
+      ["+"] = { "actions.parent", mode = "n" },
+      ["?"] = { "actions.open_cwd", mode = "n" },
     },
   },
   -- Optional dependencies
