@@ -1,11 +1,11 @@
-local custom_gruvbox = require("lualine.themes.gruvbox-material")
+local custom_rosepine = require("lualine.themes.rose-pine-dawn")
 
 return {
   {
     "nvim-lualine/lualine.nvim",
     opts = {
       options = {
-        theme = custom_gruvbox,
+        theme = custom_rosepine,
         component_separators = { left = "⎢", right = "⎥" },
         section_separators = { left = "", right = "" },
       },
