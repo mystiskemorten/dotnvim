@@ -22,9 +22,9 @@ return {
       {
         "<leader>gO",
         function()
-          toggle_diffview("DiffviewOpen master..HEAD")
+          toggle_diffview("DiffviewOpen main..HEAD")
         end,
-        desc = "Diff master",
+        desc = "Diff main",
       },
       {
         "<leader>gf",
