@@ -77,3 +77,9 @@ end
 vim.keymap.set("n", "<leader>fy", copy_reference, { noremap = true, silent = true })
 
 vim.keymap.set("n", "<leader>-", LazyVim.pick("live_grep"), { desc = "Grep (Root Dir)" })
+
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<M-1>", "<cmd>silent !tmux neww tmux-session-jump 1<CR>")
+vim.keymap.set("n", "<M-2>", "<cmd>silent !tmux neww tmux-session-jump 2<CR>")
+vim.keymap.set("n", "<M-3>", "<cmd>silent !tmux neww tmux-session-jump 3<CR>")
+vim.keymap.set("n", "<M-4>", "<cmd>silent !tmux neww tmux-session-jump 4<CR>")
