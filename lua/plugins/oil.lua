@@ -3,6 +3,7 @@ return {
   lazy = false,
   keys = {
     { "<leader>e", "<cmd>Oil --float<CR>", desc = "Explorer" },
+    { "-", "<cmd>Oil --float<CR>", desc = "Explorer" },
   },
   opts = {
     view_options = {
@@ -13,6 +14,8 @@ return {
     },
     keymaps = {
       ["<leader>e"] = { "actions.close", mode = "n" },
+      ["q"] = { "actions.close", mode = "n" },
+      ["<leader>q"] = { "actions.close", mode = "n" },
       ["+"] = { "actions.parent", mode = "n" },
       ["?"] = { "actions.open_cwd", mode = "n" },
     },
