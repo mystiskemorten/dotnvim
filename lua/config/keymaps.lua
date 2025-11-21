@@ -39,7 +39,8 @@ vim.keymap.set("n", "<leader>rq", [[:cdo s/foo/bar/gI]], { desc = "Replace text 
 
 -- change keymaps due to norwegian keyboard layout
 vim.keymap.set("n", "<leader>|", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
-vim.keymap.set("n", "<leader>\\", "<C-W>v", { desc = "Split window right", remap = true })
+vim.keymap.set("n", "<leader>+", "<C-W>s", { desc = "Split window below", remap = true })
+vim.keymap.set("n", "<leader>å", "<C-W>v", { desc = "Split window right", remap = true })
 
 -- Function to toggle background
 local toggle_background = function()
