@@ -12,6 +12,9 @@ return {
         fish_lsp = {
           filetypes = { "fish" },
         },
+        lua = {
+          filetypes = { "lua" },
+        },
       },
     },
   },
