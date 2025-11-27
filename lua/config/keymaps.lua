@@ -28,9 +28,6 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 -- chmod
 vim.keymap.set("n", "<leader>fx", "<cmd>!chmod +x %<CR>", { silent = true })
 
--- fugitive
-vim.keymap.set("n", "<leader>gd", vim.cmd.Git)
-
 -- Replace text
 vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left><Left>]], { desc = "Replace word" })
 vim.keymap.set("v", "<leader>rc", [["hy:%s/<C-r>h//gc<Left><Left><Left>]], { desc = "Replace text and confirm" })
@@ -41,22 +38,6 @@ vim.keymap.set("n", "<leader>rq", [[:cdo s/foo/bar/gI]], { desc = "Replace text 
 vim.keymap.set("n", "<leader>|", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 vim.keymap.set("n", "<leader>+", "<C-W>s", { desc = "Split window below", remap = true })
 vim.keymap.set("n", "<leader>å", "<C-W>v", { desc = "Split window right", remap = true })
-
--- Function to toggle background
-local toggle_background = function()
-  local current_bg = vim.fn.eval("&background")
-  print("Current background:", current_bg)
-  if current_bg == "light" then
-    vim.g.gruvbox_material_transparent_background = 1
-    vim.cmd("set bg=dark")
-  else
-    vim.g.gruvbox_material_transparent_background = 0
-    vim.cmd("set bg=light")
-  end
-end
-
--- Key mapping to call the function
-vim.keymap.set("n", "<leader>ub", toggle_background, { noremap = true, silent = true })
 
 local copy_reference = function()
   -- Get current buffer's filename relative to the project root
