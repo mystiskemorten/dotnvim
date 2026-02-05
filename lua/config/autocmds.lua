@@ -11,8 +11,6 @@ vim.api.nvim_create_autocmd("FileType", {
     else
       vim.opt_local.spelllang = "nb,en"
     end
-    vim.opt_local.foldlevel = 1
-    vim.opt.colorcolumn = ""
   end,
 })
 
