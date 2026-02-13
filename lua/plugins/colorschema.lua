@@ -24,6 +24,11 @@ return {
       styles = {
         transparency = true,
       },
+      palette = {
+        dawn = {
+          text = "#464261",
+        },
+      },
     },
   },
 
